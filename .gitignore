@@ -1,10 +1,17 @@
+# Environment Variables
 .env
 backend/.env
 
+# Python Cache
 __pycache__/
 *.pyc
 
+# Virtual Environment
 venv/
 backend/venv/
 
+# Uploads
 backend/uploads/
+
+# VS Code
+.vscode/
