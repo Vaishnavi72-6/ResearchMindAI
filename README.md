@@ -67,7 +67,7 @@ Generates:
 
 ## 🏗 Architecture
 
-```text
+
 PDF Upload
     ↓
 Text Extraction
@@ -111,6 +111,16 @@ POST /research-proposal	Generate Research Proposal
 POST /compare-papers	Compare Papers
 POST /research-score	Research Evaluation
 POST /reviewer-mode	IEEE Reviewer Analysis
+
+
+
+
+
+
+
+
+
+
 <img width="959" height="415" alt="image" src="https://github.com/user-attachments/assets/fb895d96-96c3-4c04-877d-d91f29547ba7" />
 <img width="955" height="194" alt="image" src="https://github.com/user-attachments/assets/fc6335d6-8166-4b3c-a2dc-2eaafa3e85ad" />
 <img width="919" height="398" alt="Screenshot 2026-06-21 074412" src="https://github.com/user-attachments/assets/24951310-4a08-4e47-9629-72e56cc4d6a2" />
@@ -122,6 +132,22 @@ POST /reviewer-mode	IEEE Reviewer Analysis
 
 
 <img width="923" height="419" alt="Screenshot 2026-06-21 074658" src="https://github.com/user-attachments/assets/e0dbcdd0-bc2a-4020-9657-3ebb296c1512" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
