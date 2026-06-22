@@ -76,9 +76,11 @@ Generates:
 <img width="923" height="419" alt="Screenshot 2026-06-21 074658" src="https://github.com/user-attachments/assets/e0dbcdd0-bc2a-4020-9657-3ebb296c1512" />
 ---
 
+
+
 ## 🏗 Architecture
 
-
+```text
 PDF Upload
     ↓
 Text Extraction
@@ -92,6 +94,7 @@ Vector Search (RAG)
 Gemini AI
     ↓
 Research Analysis Modules
+
 🛠 Tech Stack
 Frontend
 Next.js
@@ -122,7 +125,6 @@ POST /research-proposal	Generate Research Proposal
 POST /compare-papers	Compare Papers
 POST /research-score	Research Evaluation
 POST /reviewer-mode	IEEE Reviewer Analysis
-
 
 
 
