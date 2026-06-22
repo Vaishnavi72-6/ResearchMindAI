@@ -101,15 +101,15 @@ Generates:
       │ Upload Paper   │   │ Research APIs  │   │ Gemini AI      │
       │ PDF Processing │   │ Q&A / Review   │   │ LLM Engine     │
       └───────┬────────┘   └───────┬────────┘   └────────┬───────┘
-              │                    │                     │
-              ▼                    ▼                     │
+              │                    │                     
+              ▼                    ▼                     
 
-      ┌────────────────┐   ┌────────────────┐           │
-      │ PDF Extraction │   │ Semantic Search│           │
-      │ Metadata Parse │   │ Vector Search  │           │
-      └───────┬────────┘   └───────┬────────┘           │
-              │                    │                     │
-              ▼                    ▼                     │
+      ┌────────────────┐   ┌────────────────┐           
+      │ PDF Extraction │   │ Semantic Search│           
+      │ Metadata Parse │   │ Vector Search  │           
+      └───────┬────────┘   └───────┬────────┘           
+              │                    │                     
+              ▼                    ▼                     
 
       ┌───────────────────────────────────────────┐
       │         Text Chunking Pipeline            │
