@@ -78,55 +78,150 @@ Generates:
 
 
 
-## 🏗 Architecture
+
+## 🏗 System Architecture
 
 ```text
-PDF Upload
-    ↓
-Text Extraction
-    ↓
-Chunking
-    ↓
-Embedding Generation
-    ↓
-Vector Search (RAG)
-    ↓
-Gemini AI
-    ↓
-Research Analysis Modules
+                           ┌────────────────────┐
+                           │      User UI       │
+                           │  Next.js Frontend  │
+                           └─────────┬──────────┘
+                                     │
+                                     ▼
+                           ┌────────────────────┐
+                           │   FastAPI Backend  │
+                           │     REST APIs      │
+                           └─────────┬──────────┘
+                                     │
+                ┌────────────────────┼────────────────────┐
+                │                    │                    │
+                ▼                    ▼                    ▼
 
-🛠 Tech Stack
-Frontend
-Next.js
-React
-TypeScript
-Tailwind CSS
-Axios
-Backend
-FastAPI
-Python
-AI / ML
-Gemini API
-RAG
-Semantic Search
-Vector Embeddings
-NLP
-Document Processing
-PDF Extraction
-Metadata Analysis
-Text Chunking
-📡 API Endpoints
-Endpoint	Description
-POST /upload-paper	Upload Research Paper
-POST /ask-paper	Ask Questions
-POST /literature-review	Generate Literature Review
-POST /research-gaps	Generate Research Gaps
-POST /research-proposal	Generate Research Proposal
-POST /compare-papers	Compare Papers
-POST /research-score	Research Evaluation
-POST /reviewer-mode	IEEE Reviewer Analysis
+      ┌────────────────┐   ┌────────────────┐   ┌────────────────┐
+      │ Upload Paper   │   │ Research APIs  │   │ Gemini AI      │
+      │ PDF Processing │   │ Q&A / Review   │   │ LLM Engine     │
+      └───────┬────────┘   └───────┬────────┘   └────────┬───────┘
+              │                    │                     │
+              ▼                    ▼                     │
 
+      ┌────────────────┐   ┌────────────────┐           │
+      │ PDF Extraction │   │ Semantic Search│           │
+      │ Metadata Parse │   │ Vector Search  │           │
+      └───────┬────────┘   └───────┬────────┘           │
+              │                    │                     │
+              ▼                    ▼                     │
 
+      ┌───────────────────────────────────────────┐
+      │         Text Chunking Pipeline            │
+      └───────────────────┬───────────────────────┘
+                          │
+                          ▼
+
+      ┌───────────────────────────────────────────┐
+      │      Embedding Generation (Vectors)       │
+      └───────────────────┬───────────────────────┘
+                          │
+                          ▼
+
+      ┌───────────────────────────────────────────┐
+      │          Paper Knowledge Base             │
+      │       Chunks + Embeddings Storage         │
+      └───────────────────┬───────────────────────┘
+                          │
+                          ▼
+
+      ┌───────────────────────────────────────────┐
+      │      Retrieval Augmented Generation       │
+      │                 (RAG)                     │
+      └───────────────────┬───────────────────────┘
+                          │
+                          ▼
+
+      ┌───────────────────────────────────────────┐
+      │             Gemini AI Model               │
+      └───────────────────┬───────────────────────┘
+                          │
+                          ▼
+
+      ┌───────────────────────────────────────────┐
+      │            AI Research Modules            │
+      ├───────────────────────────────────────────┤
+      │ • Ask Paper                               │
+      │ • Literature Review                       │
+      │ • Research Gap Analysis                   │
+      │ • Research Proposal Generation            │
+      │ • Research Problem Discovery              │
+      │ • Compare Papers                          │
+      │ • Research Score                          │
+      │ • IEEE Reviewer Mode                      │
+      └───────────────────────────────────────────┘
+```
+
+## 🛠 Tech Stack
+
+### Frontend
+- Next.js 15
+- React
+- TypeScript
+- Tailwind CSS
+- Axios
+
+### Backend
+- FastAPI
+- Python 3.11
+- Uvicorn
+- Pydantic
+
+### AI / Machine Learning
+- Google Gemini 2.5 Flash
+- Retrieval-Augmented Generation (RAG)
+- Semantic Search
+- Vector Embeddings
+- Natural Language Processing (NLP)
+- Large Language Models (LLMs)
+
+### Document Intelligence
+- PDF Text Extraction
+- Metadata Extraction
+- Intelligent Text Chunking
+- Research Paper Analysis
+- Scientific Literature Processing
+
+### Data Processing Pipeline
+- Text Preprocessing
+- Chunk Generation
+- Embedding Generation
+- Similarity Search
+- Context Retrieval
+
+### Research Intelligence Modules
+- Research Paper Q&A
+- Literature Review Generation
+- Research Gap Analysis
+- Research Problem Discovery
+- Research Proposal Generation
+- Multi-Paper Comparison
+- Research Scoring Engine
+- IEEE Reviewer Mode
+
+### APIs & Integration
+- REST APIs
+- Gemini API
+- JSON-based Communication
+
+### Development Tools
+- VS Code
+- Git
+- GitHub
+- Postman
+- Swagger UI
+
+### Architecture
+- Client–Server Architecture
+- Retrieval-Augmented Generation (RAG)
+- Semantic Retrieval Pipeline
+- Multi-Document Knowledge Base
+- AI-Powered Research Assistant System
 
 
 
