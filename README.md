@@ -63,7 +63,11 @@ Generates:
 - Technical Review
 - Publication Recommendation
 
-<img width="959" height="415" alt="image" src="https://github.com/user-attachments/assets/fb895d96-96c3-4c04-877d-d91f29547ba7" />
+<img width="959" height="419" alt="image" src="https://github.com/user-attachments/assets/6e7db1bc-d49c-4a50-92a3-6483df08ab5a" />
+<img width="893" height="402" alt="image" src="https://github.com/user-attachments/assets/67a544a9-b89e-41a7-b5e3-b6411b44cb5c" />
+<img width="863" height="337" alt="image" src="https://github.com/user-attachments/assets/4fc57e6b-08b6-47f3-8a17-a12851eb9f58" />
+
+
 <img width="955" height="194" alt="image" src="https://github.com/user-attachments/assets/fc6335d6-8166-4b3c-a2dc-2eaafa3e85ad" />
 <img width="919" height="398" alt="Screenshot 2026-06-21 074412" src="https://github.com/user-attachments/assets/24951310-4a08-4e47-9629-72e56cc4d6a2" />
 <img width="932" height="414" alt="Screenshot 2026-06-21 074441" src="https://github.com/user-attachments/assets/537c1a00-fbc8-4aaf-aa38-d6dbc8e939f9" />
